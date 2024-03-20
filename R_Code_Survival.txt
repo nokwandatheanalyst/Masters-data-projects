@@ -1,0 +1,480 @@
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("skimr")
+install.packages("readr")
+install.packages("lattice")
+install.packages("tidyr")
+install.packages("here")
+install.packages("tidyverse")
+install.packages("ggubr")
+install.packages("describer")
+install.packages("psych")
+install.packages("gtsummary")
+install.packages("janitor")
+install.packages("stringr")
+install.packages("gmodels")
+install.packages("summarytools")
+install.packages("epiDisplay")
+install.packages("epiR")
+install.packages("survival")
+install.packages("tab")
+install.packages("gtools")
+install.packages("gtable")
+install.packages("stringi")
+install.packages("MASS")
+install.packages("glue")
+install.packages("broom")
+install.packages("palmerpenguins")
+install.packages("Hmisc")
+install.packages("car")
+install.packages("caret")
+install.packages("ROCR")
+install.packages("labelled")
+install.packages("modelr")
+install.packages("comprehenr")
+install.packages("epitools")
+install.packages("broom")
+install.packages("aod")
+install.packages("effectsize")
+install.packages("modeldata")
+install.packages("haven")
+install.packages("interplot")
+install.packages("sjPlot")
+install.packages("epiR")
+install.packages("readr")
+install.packages("dplyr")
+install.packages("stringr")
+install.packages("skimr")
+install.packages("psych")
+install.packages("hmisc")
+install.packages("gmodels")
+install.packages("summarytools")
+install.packages("epiDisplay")
+install.packages("ggpubr")
+install.packages("car")
+install.packages("MASS")
+install.packages("rcompanion")
+install.packages("tidyverse")
+install.packages("moments")
+install.packages("dlookr")
+install.packages("ISLR")
+install.packages("ggstatsplot")
+install.packages("bestNormalize")
+install.packages("forecast")
+install.packages("geepack")
+install.packages("gee")
+install.packages("broom")
+install.packages("nlme")
+install.packages("lme4")
+install.packages("broom.mixed")
+install.packages("GLMMadaptive")
+install.packages("missForest")
+install.packages("corrplot")
+install.packages("ggeffects")
+install.packages("glmmTMB")
+install.packages("stargazer")
+install.packages("naniar")
+install.packages("lubridate")
+installed.packages("janitor")
+installed.packages("glue")
+install.packages("survival")
+install.packages("VIM package")
+install.packages("missmap")
+install.packages("visdat")
+install.packages("Amelia")
+install.packages("gmodels")
+install.packages("summarytools")
+install.packages("epiDisplay")
+install.packages("tidycmprsk")
+install.packages("ggsurvfit")
+install.packages("survival")
+install.packages("survminer")
+install.packages("cmprsk")
+install.packages("devtools")
+install.packages("MASS")
+install.packages("mice")
+install.packages("nlme")
+install.packages("lme4")
+library("survival")
+library("glue")
+library("lubridate")
+library("janitor")
+library("naniar")
+library("stargazer")
+library("glmmTMB")
+library("corrplot")
+library("gee")
+library("geepack") # for GEE modelling
+library("broom") # for obtaining confidence intervals from GEE models
+library("nlme") # for LMM modelling
+library("lme4") # for GLMM modelling
+library("broom.mixed") # for obtaining confidence intervals from GLMM models
+library("GLMMadaptive") # more GLMM modelling (extensions)
+library("missForest") # to generate some missing data at random (extensions)
+library("forecast")
+library("ggpubr")
+library("gmodels")
+library("summarytools")
+library("epiDisplay")
+library("Hmisc")
+library("psych")
+library("readr")
+library("epiR")
+library("dplyr")
+library("stringr")
+library("skimr")
+library("gtsummary")
+library("gtools")
+library("car")
+library("MASS")
+library("rcompanion")
+library("tidyverse")
+library("moments")
+library("dlookr")
+library("ISLR")
+library("ggstatsplot")
+library("bestNormalize")
+library("ggeffects")
+library("sjPlot")
+library("here")
+library("dplyr")
+library("skimr")
+library("ggplot2")
+library("readr")
+library("lattice")
+library("tidyr")
+library("tidyverse")
+library("describe")
+library("psych")
+library("gtsummary")
+library("janitor")
+library("stringr")
+library("gmodels")
+library("summarytools")
+library("epiDisplay")
+library("epiR")
+library("survival")
+library("tab")
+library("gtools")
+library("gtable")
+library("stringi")
+library("MASS")
+library("glue")
+library("broom")
+library("palmerpenguins")
+library("Hmisc")
+library("car")
+library("caret")
+library("ROCR")
+library("labelled")
+library("modelr")
+library("comprehenr")
+library("epitools")
+library("broom")
+library("aod")
+library("effectsize")
+library("modeldata")
+library("haven")
+library("interplot")
+library("nlme")
+library("lme4")
+library("mice")
+library("MASS")
+library("devtools")
+library("cmprsk")
+library("tidycmprsk")
+library("ggsurvfit")
+library("survival")
+library("survminer")
+library("gmodels")
+library("summarytools")
+library("VIM package")
+library("missmap")
+library("visdat")
+library("Amelia")
+##--------------------------------------------------------------------------------------------------------------
+##Data Analysis
+#Set working directory #
+setwd("C:/Users/Student/Downloads")
+# find what directory you are in
+getwd()
+#### Read in the data ####
+transplant_demographic_data_38 <- read_csv("transplant_survival_data_38")
+transplant_demographic_data_38 <-
+read_csv("C:/Users/Student/Downloads/transplant_survival_data_38")
+##-------------------------------------------------------------------------------------------------------------
+##Exploring Data
+#Getting an idea of the DEMOGRAPHIC data
+View(transplant_demographic_data_38)##view the whole dataset
+print(transplant_demographic_data_38)
+head(transplant_demographic_data_38)# first 6 rows
+tail(transplant_demographic_data_38)##Last rows
+tail(transplant_demographic_data_38, n=10)##Last 10 rows
+str(transplant_demographic_data_38)##Provides the structure of the data set
+glimpse(transplant_demographic_data_38)
+summary(transplant_demographic_data_38)##Provides basic descriptive statistics and frequencies
+names(transplant_demographic_data_38) ##Lists variables in the dataset
+describe(transplant_demographic_data_38)
+skim(transplant_demographic_data_38)
+dim(transplant_demographic_data_38)
+nrow(transplant_demographic_data_38)
+ncol(transplant_demographic_data_38)
+##Descriptive Statistics-Age Variable
+mean(transplant_demographic_data_38$age) # Mean of all numeric variables
+median(transplant_demographic_data_38$age)
+sd(transplant_demographic_data_38$age)# Standard deviation
+var(transplant_demographic_data_38$age)# Variance
+max(transplant_demographic_data_38$age) # Max value
+min(transplant_demographic_data_38$age) # Min value
+range(transplant_demographic_data_38$age) # Range
+IQR(transplant_demographic_data_38$age)
+quantile(transplant_demographic_data_38$age)
+by(transplant_demographic_data_38$age)
+fivenum(transplant_demographic_data_38$age)
+length(transplant_demographic_data_38$age)
+which.max(transplant_demographic_data_38$age)#Determines the location of the (first) maximum of
+a numeric vector
+which.min(transplant_demographic_data_38$age)#Determines the location of the (first) minimum of a
+numeric vector
+table(transplant_demographic_data_38$age) # Mode by frequencies
+prop.table(transplant_demographic_data_38$age)
+hist(transplant_demographic_data_38$age, main="Distribution of Age",
+xlab="Age", lwd=3, col="pink")
+boxplot(transplant_demographic_data_38$age, horizontal = T, col="pink", main="Distribution of Age",
+xlab="Age")
+#Getting an idea of the SURVIVAL data
+View(transplant_survival_data_38)##view the whole dataset
+print(transplant_survival_data_38)
+head(transplant_survival_data_38)# first 6 rows
+tail(transplant_survival_data_38)##Lastsd(transplant_demographic_data_38)
+tail(transplant_survival_data_38, n=10)##Last 10 rows
+str(transplant_survival_data_38)##Provides the structure of the data set
+glimpse(transplant_survival_data_38)
+summary(transplant_survival_data_38)##Provides basic descriptive statistics andfrequencies
+names(transplant_survival_data_38) ##Lists variables in the dataset
+describe(transplant_survival_data_38)
+skim(transplant_survival_data_38)
+dim(transplant_survival_data_38)
+nrow(transplant_survival_data_38)
+ncol(transplant_survival_data_38)
+##Descriptive Statistics- Time Variable
+mean(transplant_survival_data_38$time) # Mean of all numeric variables
+median(transplant_survival_data_38$time)
+sd(transplant_survival_data_38$time)# Standard deviation
+var(transplant_survival_data_38$time)# Variance
+max(transplant_survival_data_38$time) # Max value
+min(transplant_survival_data_38$time) # Min value
+range(transplant_survival_data_38$time) # Range
+IQR(transplant_survival_data_38$time)
+quantile(transplant_survival_data_38$time)
+by(transplant_survival_data_38$time)
+fivenum(transplant_survival_data_38$time)
+length(transplant_survival_data_38$time)
+which.max(transplant_survival_data_38$time)#Determines the location of the (first)maximum of a
+numeric vector
+which.min(transplant_survival_data_38$time)#Determines the location of the (first) minimum of a
+numeric vector
+table(transplant_survival_data_38$time) # Mode by frequencies
+freq(transplant_survival_data_38$time, order = "freq")
+prop.table(transplant_survival_data_38$time)
+hist(transplant_survival_data_38$time, main="Distribution of Time",
+xlab="Age", lwd=3, col="cyan")
+boxplot(transplant_survival_data_38$time, horizontal = T, col="cyan", main="Distribution of
+Time", xlab="Age")
+#---------------------------------------------------------------------------------------------------------
+##Data Cleaning
+#DEMOGRAPHIC DATA
+#Fix structural errors
+names(transplant_demographic_data_38)#check names of variables in the data frame;-Lists variables
+in the dataset
+clean_names(transplant_demographic_data_38)##gives better names to data set
+transplant_demographic_data_38 = clean_names(transplant_demographic_data_38)
+names(transplant_demographic_data_38)
+View(transplant_demographic_data_38)
+#Remove duplicates
+duplicated(transplant_demographic_data_38)#Identify Duplicates
+sum(duplicated(transplant_demographic_data_38))
+view(transplant_demographic_data_38)
+#Remove irrelevant observations
+##Implausible values
+#Handle unwanted outliers
+#Handle missing data
+is.na(transplant_demographic_data_38)
+sum(is.na(transplant_demographic_data_38))##find the sum of non-missing values # any missing
+data
+rowSums(is.na(transplant_demographic_data_38))##Number of missing per variable
+sum(rowSums(is.na(transplant_demographic_data_38)))
+#=====================================================================
+##Data Cleaning
+#SURVIVIAL DATA
+#Fix structural errors
+names(transplant_survival_data_38)#check names of variables in the data frame;-Lists variables in
+the dataset
+clean_names(transplant_survival_data_38)##gives better names to data set
+transplant_survival_data_38$status<-factor(transplant_survival_data_38$status,levels =
+c(0,1,2),labels = c("censored","other","relapse"))
+transplant_survival_data_38 = clean_names(transplant_survival_data_38)
+names(transplant_survival_data_38)
+View(transplant_survival_data_38)
+#Remove duplicates
+duplicated(transplant_survival_data_38)#Identify Duplicates
+sum(duplicated(transplant_survival_data_38))
+distinct(transplant_survival_data_38)
+#Remove irrelevant observations
+##Implausible values
+#Handle unwanted outliers
+#Handle missing data
+is.na(transplant_survival_data_38)
+sum(is.na(transplant_survival_data_38))##find the sum of non-missing values # any missing data
+rowSums(is.na(transplant_survival_data_38))##Number of missing per variable
+sum(rowSums(is.na(transplant_survival_data_38)))
+###===================================================================
+########Joining Data########
+#perform an inner join
+inner_join(transplant_demographic_data_38, transplant_survival_data_38, by = "id")
+join_inner <- inner_join(transplant_demographic_data_38, transplant_survival_data_38, by ="id")
+view(join_inner)
+dim(join_inner)#get dimensions
+head(join_inner)#preview the new object
+glimpse(join_inner)##Now preview the dataset
+##Combine Tables
+transplant_merged_data_38<-bind_cols(join_inner)##Returns tables placed side by side as a single
+table
+View(transplant_merged_data_38)
+##Changing days to months
+transplant_merged_data_38$time <- c(transplant_merged_data_38$time/30.4375)
+data.frame(transplant_merged_data_38$time)
+View(transplant_merged_data_38$time)
+##Exploratory data analysis
+##baseline demographic data stratified by type of leukaemia
+transplant_merged_data_38 %>% tbl_summary(by = transplant_reason,statistic = list(
+all_continuous() ~ "{mean} ({sd})",
+all_categorical() ~ "{n} / {N} ({p}%)"
+),
+digits = all_continuous() ~ 2 ,missing = "no") %>%
+add_overall() %>%
+modify_caption("Baseline demographic data stratified by type of leukaemia",) %>%
+bold_labels()
+##extent of missing data
+missmap(transplant_merged_data_38)
+vis_miss(transplant_merged_data_38)
+vis_dat(transplant_merged_data_38)
+#Amount of missing data
+sum(is.na(transplant_merged_data_38$t_cell_depletion))
+md.pattern(transplant_merged_data_38)
+##--------------------------------------------------------------------------------------
+#Multiple Imputation
+# Traditional mice pipeline goes mice() -> with() -> pool()
+##Now, let’s impute the missing values
+# impute missing values using mean imputation
+##Create an imputation model using mice
+set.seed(400)
+imputed_data = mice(transplant_merged_data_38, m = 5, maxit = 10, method = "pmm", seed = 400)
+summary(imputed_data)
+head(imputed_data)
+tail(imputed_data)
+##check imputed values
+imputed_data$imp$t_cell_depletion
+sum(is.na(imputed_data$imp$t_cell_depletion))
+#check the imputation method used for each variable
+imputed_data$meth
+# Generate an imputed data set
+imputed_complete = mice::complete(imputed_data, action = "long")
+summary(imputed_complete)
+head(imputed_complete)
+tail(imputed_complete)
+sapply(imputed_complete, function (x) sum(is.na(x)))
+imputed_complete <- complete(imputed_data,1)
+#show that we have all of our imputed datasets in this "complete" dataset
+table(imputed_complete$.imp)
+#visual
+densityplot(imputed_data)
+stripplot(imputed_data, time ~ status + transplant_reason + same_sex + t_cell_depletion + age |
+.imp, pch = 20)
+###---------------------------------------------------------------------------------------------
+##comparing the probability of failure due to death from relapse and death from other cases
+##Plotting Cumulative Incidence Curves
+##Fit the CI curve-Google
+CI_curve <-survfit(Surv(time = time, event = status) ~ transplant_reason, data =
+transplant_merged_data_38)
+cuminc(Surv(time, status) ~ transplant_reason, data = transplant_merged_data_38) %>%
+ggcuminc(outcome = c("relapse", "other")) + labs(x = "Time(months)")
+#using the survival multi-state model
+CI_fit<-survfit(Surv(time, status) ~ transplant_reason, data = transplant_merged_data_38) %>%
+ggcuminc(outcome = c("relapse", "other")) + labs(x = "Time(months)")
+##Cox Proportional-Hazards Model
+##Using the imputed data set -imputed_complete
+#Main effects model
+##Other
+transother.cox <- coxph(Surv(time, status =="other")~ transplant_reason + same_sex +
+t_cell_depletion + age, data = imputed_complete)
+transother.cox
+summary(transother.cox)
+#Tabulate-Other
+transother.cox %>%
+tbl_regression(
+exp = TRUE)
+other_tab <-tbl_regression(transother.cox, exponentiate = TRUE,conf.int = TRUE)
+other_tab
+##With the interaction term
+inter_other.cox <- coxph(Surv(time, status =="other") ~ transplant_reason + same_sex +
+t_cell_depletion + age + age*transplant_reason, data = imputed_complete)
+inter_other.cox
+summary(inter_other.cox)
+#Tabulate-Other x interaction
+inter_other.cox %>%
+tbl_regression(
+exp = TRUE)
+otherinter_tab <-tbl_regression(inter_other.cox, exponentiate = TRUE,conf.int = TRUE)
+otherinter_tab
+##Variable selection
+#AIC
+AIC(transother.cox,inter_other.cox)
+#Model Diagnosis
+##To test for the proportional-hazards (PH) assumption
+#Other
+testother.ph <- cox.zph(inter_other.cox, terms = F)
+testother.ph
+ggcoxzph(testother.ph)
+ggcoxdiagnostics(testother.ph,'schoenfeld',ox.scale = 'time')
+ggcoxdiagnostics(testother.ph, type = "schoenfeld", linear.predictions = FALSE)
+##Relapse
+transrelapse.cox <- coxph(Surv(time, status == "relapse") ~ transplant_reason + same_sex +
+t_cell_depletion + age, data = imputed_complete)
+transrelapse.cox
+summary(transrelapse.cox)
+#Tabulate-relapse
+transrelapse.cox %>%
+tbl_regression(
+exp = TRUE)
+relapse_tab <-tbl_regression(transrelapse.cox, exponentiate = TRUE,conf.int = TRUE)
+relapse_tab
+##With the interaction term
+inter_relapse.cox <- coxph(Surv(time, status =="relapse") ~ transplant_reason + same_sex +
+t_cell_depletion + age + age*transplant_reason, data = imputed_complete)
+inter_relapse.cox
+summary(inter_relapse.cox)
+#Tabulate-Relapse x interaction
+inter_relapse.cox %>%
+tbl_regression(
+exp = TRUE)
+relapseinter_tab <-tbl_regression(inter_relapse.cox, exponentiate = TRUE,conf.int = TRUE)
+relapseinter_tab
+##Variable selection
+#AIC
+AIC(transrelapse.cox,inter_relapse.cox)
+#Model Diagnosis
+##To test for the proportional-hazards (PH) assumption
+#Relapse
+testrelapse.ph <- cox.zph(inter_relapse.cox, terms = F)
+testrelapse.ph
+ggcoxzph(testrelapse.ph)
+ggcoxdiagnostics(testrelapse.ph,'schoenfeld',ox.scale = 'time')
+ggcoxdiagnostics(testrelapse.ph, type = "schoenfeld", linear.predictions = FALSE)
+##Tabulating-final MODEL
+##combine OTHER and RELAPSE x interaction models in a single table
+tbl_merge(
+tbls = list(otherinter_tab, relapseinter_tab),
+tab_spanner = c("**otherinter_Model**", "**relapseinter_Model**"))
+#AIC
+AIC(inter_other.cox,inter_relapse.cox)
