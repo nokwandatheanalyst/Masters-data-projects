@@ -53,13 +53,16 @@ The outcome variable ‘med_scheme’ is a binary indicator coded as 1 if there 
 
 ● ages – age of primary beneficiary
 
-## Regression modelling (Part 3)
+### Regression modelling (Part 3)
 
-### Data:
+## Data:
 
-The data come from a multi-hospital study of adult individuals with critical, acute conditions such as  acute respiratory failure and multiple organ system failure. The primary outcome was time until death. Potential prognostic factors, both demographic and lab results, were available. 
+The data come from a multi-hospital study of adult individuals with critical, acute conditions such as acute respiratory failure and multiple organ system failure. 
 
-### Outcomes:
+## Outcome:
+The primary outcome was time until death. Potential prognostic factors, both demographic and lab results, were available. 
+
+## Variables of interest:
 A description of variables in the dataset follows:
 
 • Death - indicator for death, coded as 1 for death; and 0 alive
