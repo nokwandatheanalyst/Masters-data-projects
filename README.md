@@ -69,7 +69,9 @@ The goal of this assignment/project is to demonstrate that you can apply two met
 
 ### Data:
 
-The data come from a multi-hospital study of adult individuals with critical, acute conditions such as acute respiratory failure and multiple organ system failure. 
+The data come from a multi-hospital study of adult individuals with critical, acute conditions such as acute respiratory failure and multiple organ system failure.
+
+Link:https://github.com/nokwandatheanalyst/Masters-data-projects/blob/31738efbf3f7ba69e37b84227e769728b284d56f/Assign3_data.51.csv
 
 ### Outcome:
 The primary outcome was time until death. Potential prognostic factors, both demographic and lab results, were available. 
