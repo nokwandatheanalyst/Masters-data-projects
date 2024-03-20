@@ -98,3 +98,40 @@ A description of variables in the dataset follows:
 • Crea: Serum creatine (mg/dL)
 
 R Code Link: https://github.com/nokwandatheanalyst/Masters-data-projects/blob/31738efbf3f7ba69e37b84227e769728b284d56f/R_Code_Assign3.txt
+
+## Survival Analysis
+
+### About:
+Bone marrow transplantation is an effective treatment for acute and chronic leukaemia. However, there is considerable mortality associated with bone marrow transplantation including death due to relapse and death due to other causes.
+
+The primary aim of the analysis is to determine if different types of leukaemia are associated with different times to death from relapse or death from other causes.
+
+### Data:
+The data consist of patients with leukaemia who underwent bone marrow transplants between 1985 and 1998. Patients were diagnosed with one of three different types of leukaemia: Acute lymphocytic leukaemia, Acute myeloid leukaemia, and Chronic myelogenous leukaemia. 
+
+There are two datasets:
+• transplant_demographic_data: contains patient demographic information.
+
+Link: 
+
+• transplant_survival_data: contains patient survival information.
+
+Link:
+
+### Outcomes:
+
+## Variables of interest:
+• id: patient identifier
+
+• time: time to event or time to censoring (days)
+
+• status: event status 0 = censored, 1 = death from relapse, 2 = death from other causes
+
+• transplant_reason: type of leukaemia (Acute lymphocytic leukaemia, Acute myeloid leukaemia, and Chronic myelogenous leukaemia)
+
+• same_sex: if the donor and recipient were the same sex
+
+• t_cell_depletion: if there was a reduction in T cells
+
+• age of the patient at transplantation (years)
+
