@@ -7,8 +7,8 @@ This assignment/project aims to develop skills in performing linear regressionan
 ### Data: 
 
 This data is coming from a cohort of individuals living with HIV. These individuals had failed or 
-were intolerant of zidovudine therapy (AZT). The description of variables in the dataset are as 
-follows:
+were intolerant of zidovudine therapy (AZT). 
+Link: https://github.com/nokwandatheanalyst/Masters-data-projects/blob/66ad3885dbc1e6e82c38dbadadaa976a81767cf2/BiostatII_2022_Assign1_data.46.csv
 
 ### Outcome:
 
