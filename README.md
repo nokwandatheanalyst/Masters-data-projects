@@ -135,3 +135,4 @@ Link:https://github.com/nokwandatheanalyst/Masters-data-projects/blob/0058bc9ee3
 
 • age of the patient at transplantation (years)
 
+R Code: https://github.com/nokwandatheanalyst/Masters-data-projects/blob/c2221e2c330bd3e831796b17ecf2dc280c6634a3/R_Code_Survival.txt
