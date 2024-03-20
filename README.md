@@ -29,7 +29,7 @@ AIDS for improving treatment quality and health outcomes.
 
 ● prevOI - previous opportunistic infections coded as “AIDS” and “noAIDS””
 
-R Code link : https://github.com/nokwandatheanalyst/Masters-data-projects/blob/a8acf1986bc1361ec20c3a262e2a2f5cc119e1c2/R_Scode_Assign1.txt
+R Code Link : https://github.com/nokwandatheanalyst/Masters-data-projects/blob/a8acf1986bc1361ec20c3a262e2a2f5cc119e1c2/R_Scode_Assign1.txt
 
 ## Regression modelling (Part 2)
 
@@ -96,3 +96,5 @@ A description of variables in the dataset follows:
 • Pulse: Heart rate (beats/minute)
 
 • Crea: Serum creatine (mg/dL)
+
+R Code Link: https://github.com/nokwandatheanalyst/Masters-data-projects/blob/31738efbf3f7ba69e37b84227e769728b284d56f/R_Code_Assign3.txt
