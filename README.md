@@ -8,6 +8,7 @@ This assignment/project aims to develop skills in performing linear regressionan
 
 This data is coming from a cohort of individuals living with HIV. These individuals had failed or 
 were intolerant of zidovudine therapy (AZT). 
+
 Link: https://github.com/nokwandatheanalyst/Masters-data-projects/blob/66ad3885dbc1e6e82c38dbadadaa976a81767cf2/BiostatII_2022_Assign1_data.46.csv
 
 ### Outcome:
@@ -39,6 +40,8 @@ The goal of the assignment/project is to develop some capability in carrying out
 ### Data:
 
 This data looks at what factors increase the likelihood that individuals will change to a different medical aid scheme if provided information that the current medical aid scheme they use no longer meet their needs. 
+
+Link: https://github.com/nokwandatheanalyst/Masters-data-projects/blob/51dc3184ed508ef3cbc6feb66106f73d04303aa8/Assign2_data.51.csv
 
 ### Outcomes:
 The outcome variable ‘med_scheme’ is a binary indicator coded as 1 if there was a change from the current to a different medical aid scheme and 0 if there was no change. 
