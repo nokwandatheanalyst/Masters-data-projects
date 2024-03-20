@@ -1,0 +1,378 @@
+R Code Assign3
+install.packages("gtsummary")
+install.packages("tidyverse")
+install.packages("funModeling")
+install.packages("lubridate")
+install.packages("KMsurv")
+install.packages("survival")
+install.packages("survminer")
+install.packages("broom")
+install.packages("here")
+install.packages("plotly")
+install.packages("epitools")
+install.packages("kfigr")
+install.packages("pacman")
+library("gtsummary")
+library("tidyverse")
+library("funModeling")
+library("lubridate")
+library("KMsurv")
+library("survival")
+library("survminer")
+library("broom")
+library("here")
+library("plotly")
+library("epitools")
+library("kfigr")
+library("pacman")
+##exploring data
+View(BiostatII_2022_Assign3_data.51)
+glimpse(BiostatII_2022_Assign3_data.51)
+head(BiostatII_2022_Assign3_data.51)
+tail(BiostatII_2022_Assign3_data.51)
+summary(BiostatII_2022_Assign3_data.51)
+row.names(BiostatII_2022_Assign3_data.51)
+str(BiostatII_2022_Assign3_data.51)
+##table summary
+BiostatII_2022_Assign3_data.51 %>% 
+ tbl_summary(by = Death)
+# distribution of survival times
+ggplot(BiostatII_2022_Assign3_data.51, aes(x = Time, color = as.factor(Death))) +
+ geom_histogram(
+ fill = "white", 
+ stat = "bin",
+ binwidth = 1) +
+ theme(plot.title = element_text(hjust = 0.5)) +
+ labs(title = "Status of the individuals") + 
+ xlab("Time to death (years)") + 
+ ylab("Frequency") +
+ guides(fill = guide_legend(title = "Death"),
+ colour = guide_legend(title = "Death"))
+##Kaplan-Meier plot
+plot(survival::survfit(survival::Surv(Time, Death == 1) ~ 1, data = 
+BiostatII_2022_Assign3_data.51), 
+ xlab = "Time (Days)", 
+ ylab = "Survival probability")
+##
+BiostatII_2022_Assign3_data.51 %>% survminer::ggsurvplot( 
+ xlab = "Time (Days)",
+ ylab = "Survival Probability"#,
+ #font.title = c(11, "dark red"),
+ #censor = TRUE,
+ #conf.int = TRUE,
+ #risk.table = TRUE,
+ #risk.table.y.text = TRUE,
+ #risk.table.height = 0.25, 
+ #surv.median.line = "hv" 
+)
+#KM Model
+km.model <- survfit(Surv(Time, Death) ~ 1, type = "kaplan-meier",
+ data = BiostatII_2022_Assign3_data.51)
+km.model_2 <- survfit(Surv(Time, Death) ~ NCom, type = "kaplan-meier",
+ data = BiostatII_2022_Assign3_data.51)
+km.model_3 <- survfit(Surv(Time, Death) ~ Income, type = "kaplan-meier",
+ data = BiostatII_2022_Assign3_data.51)
+##summary of model
+km.model
+km.model_2
+km.model_3
+summary(km.model)
+summary(km.model_2)
+summary(km.model_3)
+tidy(km.model) %>% head()
+tidy(km.model_2) %>% head()
+tidy(km.model_3) %>% head()
+plot(km.model)
+plot(km.model_2)
+plot(km.model_3)
+##adding confidence intervals, red line, around the survival function
+plot(km.model, conf.int = T, xlab = "Time (days)", ylab = "Alive = S(t)", main = 
+"Kaplan Meier Model 1", las = 1, mark.time = TRUE)
+abline (h=0.5, col= "red")
+ggsurvplot(km.model)
+plot(km.model_2, conf.int = T, xlab = "Time (days)", ylab = "Alive = S(t)", main = 
+"Kaplan Meier Model 1", las = 1, mark.time = TRUE)
+abline (h=0.5, col= "red")
+ggsurvplot(km.model_2)
+plot(km.model_3, conf.int = T, xlab = "Time (days)", ylab = "Alive = S(t)", main = 
+"Kaplan Meier Model 1", las = 1, mark.time = TRUE)
+abline (h=0.5, col= "red")
+ggsurvplot(km.model_3)
+##Estimating the Survival Function - S(t)
+##Creating the survival object
+survival::Surv(BiostatII_2022_Assign3_data.51$Time, 
+BiostatII_2022_Assign3_data.51$Death)[1:10]
+##The life table method for estimating S(t)
+cuts <- seq(0, 21, 3)
+BiostatII_2022_Assign3_data.51 %>%
+ mutate(Time = cut(Time, cuts)) %>%
+ group_by(Time) %>%
+ summarise(ncensor = sum(Death == 0),
+ nevent = sum(Death == 1))-> lifetab_df 
+##Kaplan-Meier estimator for S(t)
+kp_plot_com <- survival::survfit(survival::Surv(Time, Death == 1) ~ 1, data = 
+BiostatII_2022_Assign3_data.51)
+names(kp_plot_com)
+print(kp_plot_com)
+tidy(kp_plot_com) %>% head()
+##Kaplan-Meier plot - base R
+plot(survival::survfit(survival::Surv(Time, Death == 1) ~ 1, data = 
+BiostatII_2022_Assign3_data.51), 
+ xlab = "Time (Days)", 
+ ylab = "Survival probability")
+##Kaplan-Meier plot- ggsurvplot
+kp_plot_com %>% survminer::ggsurvplot( 
+ xlab = "Time (days)",
+ ylab = "Survival Probability")
+##Calculating survival time and censoring
+Surv(time = BiostatII_2022_Assign3_data.51$Time, event = 
+BiostatII_2022_Assign3_data.51$Death)
+view(BiostatII_2022_Assign3_data.51)
+##analysis of event of interest
+survfit(Surv(time = Time, event = Death) ~ 1, data = 
+BiostatII_2022_Assign3_data.51)
+survfit(Surv(time = Time, event = Death) ~ NCom, data = 
+BiostatII_2022_Assign3_data.51)
+survfit(Surv(time = Time, event = Death) ~ Income, data = 
+BiostatII_2022_Assign3_data.51)
+##
+s1 = survfit(Surv(time = Time, event = Death) ~ 1, data = 
+BiostatII_2022_Assign3_data.51)
+s2 = survfit(Surv(time = Time, event = Death) ~ NCom, data = 
+BiostatII_2022_Assign3_data.51)
+s3 = survfit(Surv(time = Time, event = Death) ~ Income, data = 
+BiostatII_2022_Assign3_data.51)
+summary(s1)
+summary(s2)
+summary(s3)
+##
+plot(s1)
+plot(s2)
+plot(s3)
+ggsurvplot(s1)
+ggsurvplot(s2)
+ggsurvplot(s3)
+##
+##Adding risk table
+ggsurvplot(s1, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",
+ risk.table = TRUE)
+ggsurvplot(s2, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",
+ risk.table = TRUE)
+ggsurvplot(s3, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",
+ risk.table = TRUE)
+##changing variable
+##NCom
+s2_ = survfit(Surv(time = Time, event = Death) ~ NCom, data = 
+BiostatII_2022_Assign3_data.51)
+s2_
+ggsurvplot(s2_, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",
+ risk.table = TRUE)
+#Income
+s3_ = survfit(Surv(time = Time, event = Death) ~ Income, data = 
+BiostatII_2022_Assign3_data.51)
+s3_
+ggsurvplot(s3_, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",
+ risk.table = TRUE)
+##Adding confidence interval
+ggsurvplot(s1_, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",conf.int = TRUE,
+ risk.table = TRUE, pval = TRUE)
+ggsurvplot(s2_, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",legend.title = "NCom",conf.int = TRUE,
+ risk.table = TRUE, pval = TRUE)
+##Customized survival curves
+ggsurvplot(s2_, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",legend.title = "NCom",conf.int = TRUE,
+ risk.table = TRUE, pval = TRUE, size = 1, # Add risk table
+ risk.table.col = "strata",legend.labs =
+ c("high", "low","medium"),risk.table.height = 0.25, ggtheme = 
+theme_bw())
+##Without CI
+ggsurvplot(s2_, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",legend.title = "NCom",
+ risk.table = TRUE, pval = TRUE, size = 1, # Add risk table
+ risk.table.col = "strata",legend.labs =
+ c("high", "low","medium"),risk.table.height = 0.25, ggtheme = 
+theme_bw())
+##
+ggsurvplot(s3_, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",legend.title = "Income",conf.int = TRUE,
+ risk.table = TRUE, pval = TRUE)
+##Customized survival curves
+ggsurvplot(s3_, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",legend.title = "Income",conf.int = TRUE,
+ risk.table = TRUE, pval = TRUE, size = 1, # Add risk table
+ risk.table.col = "strata",legend.labs =
+ c(">R50k", "R11-R25k","R25-R50k","under R11k"),risk.table.height = 
+0.25, ggtheme = theme_bw())
+##Without CI
+ggsurvplot(s3_, xlab = "Time (in days)",
+ ylab = "Survival probability",
+ surv.median.line = "hv",legend.title = "Income",
+ risk.table = TRUE, pval = TRUE, size = 1, # Add risk table
+ risk.table.col = "strata",risk.table.height = 0.25, ggtheme = 
+theme_bw())
+## GG Plot Customized survival curves
+ggsurvplot(
+ s2_,
+ data = BiostatII_2022_Assign3_data.51,
+ size = 1, # change line size
+ palette =
+ c("#E7B800", "#2E9FDF"),# custom color palettes
+ conf.int = TRUE, # Add confidence interval
+ pval = TRUE, # Add p-value
+ risk.table = TRUE, # Add risk table
+ risk.table.col = "strata",# Risk table color by groups
+ legend.labs =
+ c("high", "low","medium"), # Change legend labels
+ risk.table.height = 0.25, # Useful to change when you have multiple groups
+ ggtheme = theme_bw() # Change ggplot2 theme
+)
+##Log Rank Tests
+survdiff(Surv(time = Time, event = Death) ~ NCom,data = 
+BiostatII_2022_Assign3_data.51)
+survdiff(Surv(time = Time, event = Death) ~ Income,data = 
+BiostatII_2022_Assign3_data.51) 
+##we can choose to plot simple curves
+plot(survfit(Surv(time = Time, event = Death) ~ NCom, data = 
+BiostatII_2022_Assign3_data.51), 
+ xlab = "Time", 
+ ylab = "Overall survival probability")
+plot(survfit(Surv(time = Time, event = Death) ~ Income, data = 
+BiostatII_2022_Assign3_data.51), 
+ xlab = "Time", 
+ ylab = "Overall survival probability")
+#### The life table method for estimating S(t)
+cuts <- seq(0, 21, 3)
+BiostatII_2022_Assign3_data.51 %>%
+ mutate(time_cat = cut(Time, cuts)) %>%
+ group_by(time_cat) %>%
+ summarise(ncensor = sum(Death == 0),
+ nevent = sum(Death == 1))-> lifetab_df 
+with(lifetab_df, 
+ lifetab(tis = cuts, ninit = nrow(BiostatII_2022_Assign3_data.51), nlost = 
+ncensor, nevent = nevent)) -> df_lifetab
+round(df_lifetab, 3)
+#### The Kaplan-Meier estimator for S(t)
+##For NCom
+KM_s2 <- survival::survfit(survival::Surv(Time, Death == 1) ~ ~ NCom, data = 
+BiostatII_2022_Assign3_data.51)
+names(KM_s2)
+print(KM_s2)
+tidy(KM_s2) %>% head()
+##For Income
+KM_s3 <- survival::survfit(survival::Surv(Time, Death == 1) ~ Income, data = 
+BiostatII_2022_Assign3_data.51)
+names(KM_s3)
+print(KM_s3)
+tidy(KM_s3) %>% head()
+##estimates of the survival probabilities
+##For NCom
+print(s2_)
+summary(s2_, times = 365)
+surv_s2 <-survfit(Surv(time = Time, event = Death) ~ NCom, data = 
+BiostatII_2022_Assign3_data.51)
+summary(surv_s2,times = 365)
+tidy(s2_) %>% tail()
+#For Income
+print(s3_)
+summary(s3_, times = 365)
+surv_s3 <-survfit(Surv(time = Time, event = Death) ~ Income, data = 
+BiostatII_2022_Assign3_data.51)
+summary(surv_s3,times = 365)
+tidy(s3_) %>% tail()
+##cox proportional hazard
+##Multivariate analysis
+Cox_multi <- coxph(Surv(Time, Death == 1) ~ Age + NCom + Income + MAP + Pulse + 
+Crea, data = BiostatII_2022_Assign3_data.51)
+summary(Cox_multi)
+##graphically looking at cox results
+ggforest(Cox_multi)
+##Tabulating
+Cox_multi %>%
+ tbl_regression(
+ exp = TRUE)
+mUltivariate_tab <-tbl_regression(Cox_multi, exponentiate = TRUE,conf.int = TRUE)
+mUltivariate_tab
+#Univariate Cox Models
+##Age
+Cox_age <- coxph(Surv(Time, Death == 1) ~ Age, data = 
+BiostatII_2022_Assign3_data.51)
+summary(Cox_age)
+tidy(Cox_age)
+broom::tidy(Cox_age,exponentiate= TRUE,conf.int = TRUE)
+Cox_agetab <- tbl_regression(Cox_age, exponentiate = TRUE,conf.int = TRUE)
+Cox_agetab
+##NCom
+Cox_NCom <- coxph(Surv(Time, Death == 1) ~ NCom, data = 
+BiostatII_2022_Assign3_data.51)
+summary(Cox_NCom)
+tidy(Cox_NCom)
+broom::tidy(Cox_NCom,exponentiate= TRUE,conf.int = TRUE)
+Cox_NComtab <- tbl_regression(Cox_NCom, exponentiate = TRUE,conf.int = TRUE)
+Cox_NComtab
+##Income
+Cox_Income <- coxph(Surv(Time, Death == 1) ~ Income, data = 
+BiostatII_2022_Assign3_data.51)
+summary(Cox_Income)
+tidy(Cox_Income)
+broom::tidy(Cox_Income,exponentiate= TRUE,conf.int = TRUE)
+Cox_Incometab <- tbl_regression(Cox_Income, exponentiate = TRUE,conf.int = TRUE)
+Cox_Incometab
+##MAP
+Cox_MAP<- coxph(Surv(Time, Death == 1) ~ MAP, data = 
+BiostatII_2022_Assign3_data.51)
+summary(Cox_MAP)
+tidy(Cox_MAP)
+broom::tidy(Cox_MAP,exponentiate= TRUE,conf.int = TRUE)
+Cox_MAPtab <- tbl_regression(Cox_MAP, exponentiate = TRUE,conf.int = TRUE)
+Cox_MAPtab
+##Pulse
+Cox_Pulse <- coxph(Surv(Time, Death == 1) ~ Pulse, data = 
+BiostatII_2022_Assign3_data.51)
+summary(Cox_Pulse)
+tidy(Cox_Pulse)
+broom::tidy(Cox_Pulse,exponentiate= TRUE,conf.int = TRUE)
+Cox_Pulsetab <- tbl_regression(Cox_Pulse, exponentiate = TRUE,conf.int = TRUE)
+Cox_Pulsetab
+##Crea
+Cox_Crea <- coxph(Surv(Time, Death == 1) ~ Crea, data = 
+BiostatII_2022_Assign3_data.51)
+summary(Cox_Crea)
+tidy(Cox_Crea)
+broom::tidy(Cox_Crea,exponentiate= TRUE,conf.int = TRUE)
+Cox_Creatab <- tbl_regression(Cox_Crea, exponentiate = TRUE,conf.int = TRUE)
+Cox_Creatab
+##Combining both tables
+##Combine Univariate results
+tbl_merge(
+ tbls = 
+list(Cox_agetab,Cox_NComtab,Cox_Incometab,Cox_MAPtab,Cox_Pulsetab,Cox_Creatab),)
+Univariate_tab <- tbl_merge(
+ tbls = 
+list(Cox_agetab,Cox_NComtab,Cox_Incometab,Cox_MAPtab,Cox_Pulsetab,Cox_Creatab),)
+Univariate_tab
+##combine univariate and mutlivariate models in a single table
+tbl_merge(
+ tbls = list(Univariate_tab, mUltivariate_tab), 
+ tab_spanner = c("**Univariate_Model**", "**Multivariate_Model**"))
+##Test the proportional hazard assumption
+plot(cox.zph(Cox_multi))
+cox.zph(Cox_multi)
+ggcoxdiagnostics(Cox_multi,'schoenfeld',ox.scale = 'time')
