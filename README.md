@@ -116,7 +116,7 @@ Link: https://github.com/nokwandatheanalyst/Masters-data-projects/blob/13ee39264
 
 • transplant_survival_data: contains patient survival information.
 
-Link:
+Link:https://github.com/nokwandatheanalyst/Masters-data-projects/blob/0058bc9ee305b48ef22fc8885a800d4d143bdec7/transplant_survival_data_38.csv
 
 ### Outcomes:
 
