@@ -1,0 +1,642 @@
+id,matage,ht,gestwks,sex,ethnic,lbw,agegrp
+1,33,2,38,Female,1,Weight<2500,30-34 yrs
+2,34,2,39,Female,1,Normal 2500+,30-34 yrs
+3,34,2,36,Female,1,Weight<2500,30-34 yrs
+4,30,2,39,Male,1,Normal 2500+,30-34 yrs
+5,35,2,38,Female,1,Normal 2500+,35-39 yrs
+6,37,2,38,Male,1,Normal 2500+,35-39 yrs
+7,31,2,40,Male,1,Normal 2500+,30-34 yrs
+8,31,1,35,Female,1,Weight<2500,30-34 yrs
+9,33,1,39,Male,1,Normal 2500+,30-34 yrs
+10,33,2,40,Female,1,Normal 2500+,30-34 yrs
+11,29,2,42,Female,1,Normal 2500+,20-29 yrs
+12,37,2,41,Male,1,Normal 2500+,35-39 yrs
+13,36,2,41,Female,1,Normal 2500+,35-39 yrs
+14,39,2,40,Male,1,Normal 2500+,35-39 yrs
+15,34,2,39,Male,1,Normal 2500+,30-34 yrs
+16,36,2,39,Male,1,Normal 2500+,35-39 yrs
+17,37,2,41,Male,1,Normal 2500+,35-39 yrs
+18,35,2,39,Female,1,Normal 2500+,35-39 yrs
+19,38,2,40,Female,1,Normal 2500+,35-39 yrs
+20,34,2,39,Male,1,Normal 2500+,30-34 yrs
+21,28,2,40,Female,1,Normal 2500+,20-29 yrs
+22,38,2,39,Male,1,Normal 2500+,35-39 yrs
+23,34,2,40,Female,1,Normal 2500+,30-34 yrs
+24,34,1,39,Male,1,Normal 2500+,30-34 yrs
+25,39,2,39,Male,1,Normal 2500+,35-39 yrs
+26,40,2,41,Female,1,Normal 2500+,40+yrs
+27,33,2,40,Female,1,Normal 2500+,30-34 yrs
+28,36,2,39,Female,1,Normal 2500+,35-39 yrs
+29,27,2,39,Female,1,Normal 2500+,20-29 yrs
+30,39,2,33,Male,1,Weight<2500,35-39 yrs
+31,33,2,39,Female,1,Normal 2500+,30-34 yrs
+32,39,2,39,Female,1,Normal 2500+,35-39 yrs
+33,38,2,40,Female,1,Normal 2500+,35-39 yrs
+34,33,2,40,Female,1,Normal 2500+,30-34 yrs
+35,32,2,41,Female,1,Normal 2500+,30-34 yrs
+36,32,2,39,Male,1,Normal 2500+,30-34 yrs
+37,32,2,39,Female,1,Normal 2500+,30-34 yrs
+38,38,1,37,Male,1,Normal 2500+,35-39 yrs
+39,35,2,41,Female,1,Normal 2500+,35-39 yrs
+40,35,2,40,Male,1,Weight<2500,35-39 yrs
+41,33,2,40,Female,1,Normal 2500+,30-34 yrs
+42,36,2,40,Female,1,Normal 2500+,35-39 yrs
+43,35,2,38,Male,1,Normal 2500+,35-39 yrs
+44,38,2,39,Male,1,Normal 2500+,35-39 yrs
+45,29,2,37,Male,1,Weight<2500,20-29 yrs
+46,41,2,40,Female,1,Normal 2500+,40+yrs
+47,34,2,39,Female,1,Normal 2500+,30-34 yrs
+48,33,2,40,Male,1,Normal 2500+,30-34 yrs
+49,32,2,41,Male,1,Normal 2500+,30-34 yrs
+50,31,2,34,Female,1,Weight<2500,30-34 yrs
+51,30,2,39,Female,1,Normal 2500+,30-34 yrs
+52,32,2,39,Male,1,Normal 2500+,30-34 yrs
+53,35,2,40,Female,1,Normal 2500+,35-39 yrs
+54,35,2,40,Female,1,Normal 2500+,35-39 yrs
+55,34,2,38,Male,1,Normal 2500+,30-34 yrs
+56,38,1,38,Male,1,Normal 2500+,35-39 yrs
+57,35,1,39,Male,1,Normal 2500+,35-39 yrs
+58,32,2,40,Male,1,Normal 2500+,30-34 yrs
+59,29,2,37,Male,1,Normal 2500+,20-29 yrs
+60,34,1,40,Male,1,Normal 2500+,30-34 yrs
+61,34,2,35,Male,1,Normal 2500+,30-34 yrs
+62,36,2,40,Male,1,Normal 2500+,35-39 yrs
+63,34,2,40,Male,1,Normal 2500+,30-34 yrs
+64,26,1,39,Male,1,Normal 2500+,20-29 yrs
+65,29,2,38,Female,1,Weight<2500,20-29 yrs
+66,28,2,39,Male,1,Normal 2500+,20-29 yrs
+67,34,1,38,Female,1,Normal 2500+,30-34 yrs
+68,39,2,39,Male,1,Normal 2500+,35-39 yrs
+69,31,2,41,Female,1,Normal 2500+,30-34 yrs
+70,28,2,39,Male,1,Normal 2500+,20-29 yrs
+71,32,2,39,Female,1,Normal 2500+,30-34 yrs
+72,27,2,40,Male,1,Normal 2500+,20-29 yrs
+73,33,2,39,Female,1,Normal 2500+,30-34 yrs
+74,36,2,40,Male,1,Normal 2500+,35-39 yrs
+75,40,2,41,Male,1,Normal 2500+,40+yrs
+76,33,1,37,Male,1,Normal 2500+,30-34 yrs
+77,37,1,37,Female,1,Weight<2500,35-39 yrs
+78,26,2,38,Male,1,Normal 2500+,20-29 yrs
+79,39,1,38,Male,1,Weight<2500,35-39 yrs
+80,37,2,36,Male,1,Normal 2500+,35-39 yrs
+81,32,2,39,Female,1,Normal 2500+,30-34 yrs
+82,27,2,40,Female,1,Normal 2500+,20-29 yrs
+83,32,2,40,Female,1,Normal 2500+,30-34 yrs
+84,35,2,38,Male,1,Normal 2500+,35-39 yrs
+85,40,2,39,Male,1,Normal 2500+,40+yrs
+86,36,2,38,Female,1,Normal 2500+,35-39 yrs
+87,29,2,41,Female,1,Normal 2500+,20-29 yrs
+88,31,1,39,Female,1,Normal 2500+,30-34 yrs
+89,33,1,37,Male,1,Weight<2500,30-34 yrs
+90,41,2,39,Female,1,Normal 2500+,40+yrs
+91,39,2,38,Male,1,Normal 2500+,35-39 yrs
+92,39,2,38,Male,1,Normal 2500+,35-39 yrs
+93,33,2,35,Male,1,Normal 2500+,30-34 yrs
+94,27,2,41,Female,1,Normal 2500+,20-29 yrs
+95,32,2,34,Male,1,Normal 2500+,30-34 yrs
+96,34,2,41,Male,1,Normal 2500+,30-34 yrs
+97,28,2,41,Female,1,Normal 2500+,20-29 yrs
+98,30,2,38,Female,1,Normal 2500+,30-34 yrs
+99,35,2,40,Female,1,Normal 2500+,35-39 yrs
+100,38,2,38,Male,1,Normal 2500+,35-39 yrs
+101,34,2,38,Female,1,Normal 2500+,30-34 yrs
+102,36,2,39,Male,1,Normal 2500+,35-39 yrs
+103,35,2,38,Female,1,Weight<2500,35-39 yrs
+104,29,2,41,Male,1,Normal 2500+,20-29 yrs
+105,25,2,38,Female,1,Normal 2500+,20-29 yrs
+106,36,2,40,Female,1,Normal 2500+,35-39 yrs
+107,23,2,39,Female,1,Normal 2500+,20-29 yrs
+108,39,2,39,Male,1,Normal 2500+,35-39 yrs
+109,40,2,40,Male,1,Normal 2500+,40+yrs
+110,32,1,39,Female,1,Normal 2500+,30-34 yrs
+111,31,2,41,Male,1,Normal 2500+,30-34 yrs
+112,36,2,34,Female,1,Normal 2500+,35-39 yrs
+113,33,2,39,Male,1,Normal 2500+,30-34 yrs
+114,34,2,39,Male,1,Normal 2500+,30-34 yrs
+115,38,2,38,Female,1,Normal 2500+,35-39 yrs
+116,37,2,39,Male,1,Normal 2500+,35-39 yrs
+117,39,2,40,Male,1,Normal 2500+,35-39 yrs
+118,38,2,39,Male,1,Normal 2500+,35-39 yrs
+119,33,2,41,Female,1,Normal 2500+,30-34 yrs
+120,35,1,37,Male,1,Weight<2500,35-39 yrs
+121,31,2,38,Male,1,Normal 2500+,30-34 yrs
+122,37,2,40,Female,1,Normal 2500+,35-39 yrs
+123,31,2,36,Male,1,Normal 2500+,30-34 yrs
+124,38,2,40,Male,1,Normal 2500+,35-39 yrs
+125,37,2,41,Female,1,Normal 2500+,35-39 yrs
+126,41,2,39,Male,1,Normal 2500+,40+yrs
+127,34,2,40,Female,1,Normal 2500+,30-34 yrs
+128,33,2,39,Female,1,Normal 2500+,30-34 yrs
+129,32,2,39,Female,1,Normal 2500+,30-34 yrs
+130,33,2,37,Female,1,Normal 2500+,30-34 yrs
+131,36,2,39,Male,1,Normal 2500+,35-39 yrs
+132,38,2,39,Female,1,Normal 2500+,35-39 yrs
+133,40,1,39,Female,1,Normal 2500+,40+yrs
+134,29,2,41,Female,1,Normal 2500+,20-29 yrs
+135,28,2,38,Female,1,Normal 2500+,20-29 yrs
+136,32,1,38,Male,1,Normal 2500+,30-34 yrs
+137,40,2,35,Male,1,Normal 2500+,40+yrs
+138,41,2,37,Female,1,Normal 2500+,40+yrs
+139,39,2,40,Female,1,Normal 2500+,35-39 yrs
+140,38,2,39,Female,1,Normal 2500+,35-39 yrs
+141,33,2,39,Male,1,Normal 2500+,30-34 yrs
+142,33,2,40,Female,1,Normal 2500+,30-34 yrs
+143,33,2,40,Female,1,Normal 2500+,30-34 yrs
+144,40,1,38,Male,1,Weight<2500,40+yrs
+145,38,2,37,Male,1,Normal 2500+,35-39 yrs
+146,40,2,37,Female,1,Normal 2500+,40+yrs
+147,36,2,41,Male,1,Normal 2500+,35-39 yrs
+148,38,2,41,Female,1,Normal 2500+,35-39 yrs
+149,38,2,36,Female,1,Weight<2500,35-39 yrs
+150,31,1,38,Female,1,Weight<2500,30-34 yrs
+151,27,2,39,Male,1,Normal 2500+,20-29 yrs
+152,33,2,36,Female,1,Weight<2500,30-34 yrs
+153,34,2,40,Male,1,Normal 2500+,30-34 yrs
+154,33,2,40,Female,1,Normal 2500+,30-34 yrs
+155,36,2,42,Male,1,Normal 2500+,35-39 yrs
+156,34,2,40,Male,1,Normal 2500+,30-34 yrs
+157,38,2,38,Female,1,Normal 2500+,35-39 yrs
+158,37,1,35,Male,1,Weight<2500,35-39 yrs
+159,34,2,37,Female,1,Weight<2500,30-34 yrs
+160,31,2,39,Male,1,Normal 2500+,30-34 yrs
+161,32,2,37,Male,1,Normal 2500+,30-34 yrs
+162,37,2,40,Male,1,Normal 2500+,35-39 yrs
+163,34,1,41,Male,1,Normal 2500+,30-34 yrs
+164,43,2,41,Male,1,Normal 2500+,40+yrs
+165,34,2,40,Male,1,Normal 2500+,30-34 yrs
+166,34,2,41,Female,1,Normal 2500+,30-34 yrs
+167,38,2,40,Male,1,Normal 2500+,35-39 yrs
+168,37,2,39,Female,1,Normal 2500+,35-39 yrs
+169,31,2,39,Male,1,Normal 2500+,30-34 yrs
+170,41,2,39,Male,1,Normal 2500+,40+yrs
+171,38,2,38,Male,1,Normal 2500+,35-39 yrs
+172,40,1,40,Male,1,Normal 2500+,40+yrs
+173,36,1,38,Female,1,Normal 2500+,35-39 yrs
+174,38,2,41,Male,1,Normal 2500+,35-39 yrs
+175,34,2,37,Female,1,Normal 2500+,30-34 yrs
+176,32,2,38,Male,1,Normal 2500+,30-34 yrs
+177,37,2,34,Male,1,Normal 2500+,35-39 yrs
+178,35,2,38,Male,1,Normal 2500+,35-39 yrs
+179,38,2,34,Male,1,Weight<2500,35-39 yrs
+180,32,2,40,Male,1,Normal 2500+,30-34 yrs
+181,39,2,41,Male,1,Normal 2500+,35-39 yrs
+182,36,2,40,Female,1,Normal 2500+,35-39 yrs
+183,31,1,37,Male,1,Normal 2500+,30-34 yrs
+184,33,2,41,Female,1,Normal 2500+,30-34 yrs
+185,32,2,26,Female,1,Weight<2500,30-34 yrs
+186,37,2,41,Female,1,Normal 2500+,35-39 yrs
+187,34,2,39,Male,1,Normal 2500+,30-34 yrs
+188,37,1,40,Male,1,Normal 2500+,35-39 yrs
+189,30,2,38,Male,1,Normal 2500+,30-34 yrs
+190,37,2,40,Female,1,Normal 2500+,35-39 yrs
+191,31,2,38,Female,1,Normal 2500+,30-34 yrs
+192,28,2,41,Female,1,Normal 2500+,20-29 yrs
+193,35,2,40,Female,1,Normal 2500+,35-39 yrs
+194,38,2,40,Female,1,Normal 2500+,35-39 yrs
+195,29,2,39,Male,1,Normal 2500+,20-29 yrs
+196,33,2,41,Female,1,Normal 2500+,30-34 yrs
+197,31,2,39,Male,1,Normal 2500+,30-34 yrs
+198,37,2,40,Female,1,Normal 2500+,35-39 yrs
+199,36,2,42,Female,1,Normal 2500+,35-39 yrs
+200,36,2,41,Male,1,Normal 2500+,35-39 yrs
+201,35,2,39,Male,1,Normal 2500+,35-39 yrs
+202,35,1,39,Male,1,Normal 2500+,35-39 yrs
+203,38,2,39,Female,1,Normal 2500+,35-39 yrs
+204,37,2,39,Male,1,Weight<2500,35-39 yrs
+205,39,2,40,Male,1,Normal 2500+,35-39 yrs
+206,40,2,37,Female,1,Normal 2500+,40+yrs
+207,36,2,38,Female,1,Normal 2500+,35-39 yrs
+208,37,1,38,Male,1,Weight<2500,35-39 yrs
+209,35,2,41,Female,1,Normal 2500+,35-39 yrs
+210,25,1,38,Male,1,Normal 2500+,20-29 yrs
+211,39,1,37,Male,1,Weight<2500,35-39 yrs
+212,40,2,40,Male,1,Normal 2500+,40+yrs
+213,34,2,35,Male,1,Normal 2500+,30-34 yrs
+214,36,2,39,Male,1,Normal 2500+,35-39 yrs
+215,33,1,41,Female,1,Normal 2500+,30-34 yrs
+216,34,2,37,Female,1,Normal 2500+,30-34 yrs
+217,40,2,38,Male,1,Normal 2500+,40+yrs
+218,42,2,39,Male,1,Normal 2500+,40+yrs
+219,28,2,38,Male,1,Normal 2500+,20-29 yrs
+220,33,2,40,Male,1,Normal 2500+,30-34 yrs
+221,34,2,40,Female,1,Normal 2500+,30-34 yrs
+222,34,2,39,Female,1,Normal 2500+,30-34 yrs
+223,39,2,38,Female,1,Normal 2500+,35-39 yrs
+224,36,2,38,Female,1,Normal 2500+,35-39 yrs
+225,37,2,37,Male,1,Weight<2500,35-39 yrs
+226,32,2,40,Male,1,Normal 2500+,30-34 yrs
+227,40,2,39,Male,1,Normal 2500+,40+yrs
+228,28,2,40,Female,1,Normal 2500+,20-29 yrs
+229,34,2,41,Female,1,Normal 2500+,30-34 yrs
+230,39,2,39,Female,1,Normal 2500+,35-39 yrs
+231,34,2,38,Female,1,Normal 2500+,30-34 yrs
+232,34,2,39,Male,1,Normal 2500+,30-34 yrs
+233,30,2,36,Female,1,Normal 2500+,30-34 yrs
+234,31,1,28,Male,1,Weight<2500,30-34 yrs
+235,27,2,40,Female,1,Normal 2500+,20-29 yrs
+236,36,2,39,Male,1,Weight<2500,35-39 yrs
+237,33,1,41,Female,1,Normal 2500+,30-34 yrs
+238,36,2,40,Male,1,Normal 2500+,35-39 yrs
+239,36,2,37,Male,1,Normal 2500+,35-39 yrs
+240,38,2,40,Female,1,Normal 2500+,35-39 yrs
+241,26,2,37,Male,1,Weight<2500,20-29 yrs
+242,35,2,40,Female,1,Normal 2500+,35-39 yrs
+243,34,2,41,Female,1,Normal 2500+,30-34 yrs
+244,30,2,39,Male,1,Normal 2500+,30-34 yrs
+245,31,2,42,Male,1,Normal 2500+,30-34 yrs
+246,38,2,33,Female,1,Weight<2500,35-39 yrs
+247,32,2,39,Female,1,Normal 2500+,30-34 yrs
+248,37,2,41,Male,1,Normal 2500+,35-39 yrs
+249,34,2,36,Female,1,Normal 2500+,30-34 yrs
+250,39,2,38,Female,1,Weight<2500,35-39 yrs
+251,38,1,38,Male,1,Normal 2500+,35-39 yrs
+252,32,2,40,Female,1,Normal 2500+,30-34 yrs
+253,32,2,40,Female,1,Normal 2500+,30-34 yrs
+254,42,2,39,Female,1,Normal 2500+,40+yrs
+255,39,2,40,Male,1,Normal 2500+,35-39 yrs
+256,38,2,40,Female,1,Normal 2500+,35-39 yrs
+257,37,2,39,Male,1,Normal 2500+,35-39 yrs
+258,35,2,40,Male,1,Normal 2500+,35-39 yrs
+259,36,2,37,Male,1,Normal 2500+,35-39 yrs
+260,30,2,41,Male,1,Normal 2500+,30-34 yrs
+261,27,2,34,Female,2,Weight<2500,20-29 yrs
+262,39,2,40,Male,2,Normal 2500+,35-39 yrs
+263,35,2,39,Male,2,Normal 2500+,35-39 yrs
+264,35,2,41,Male,2,Normal 2500+,35-39 yrs
+265,33,2,39,Female,2,Normal 2500+,30-34 yrs
+266,39,2,39,Female,2,Normal 2500+,35-39 yrs
+267,40,2,40,Male,2,Normal 2500+,40+yrs
+268,37,2,40,Male,2,Normal 2500+,35-39 yrs
+269,34,2,38,Male,2,Normal 2500+,30-34 yrs
+270,40,2,36,Male,2,Normal 2500+,40+yrs
+271,28,2,40,Female,2,Normal 2500+,20-29 yrs
+272,40,2,36,Female,2,Normal 2500+,40+yrs
+273,38,2,40,Female,2,Normal 2500+,35-39 yrs
+274,35,2,38,Female,2,Normal 2500+,35-39 yrs
+275,37,1,37,Female,2,Normal 2500+,35-39 yrs
+276,27,1,28,Female,2,Weight<2500,20-29 yrs
+277,37,2,42,Female,2,Normal 2500+,35-39 yrs
+278,32,2,38,Male,2,Normal 2500+,30-34 yrs
+279,30,2,39,Female,2,Normal 2500+,30-34 yrs
+280,28,2,41,Male,2,Normal 2500+,20-29 yrs
+281,32,2,39,Female,2,Normal 2500+,30-34 yrs
+282,41,2,32,Female,2,Weight<2500,40+yrs
+283,31,2,39,Male,2,Normal 2500+,30-34 yrs
+284,35,2,42,Female,2,Normal 2500+,35-39 yrs
+285,35,2,33,Female,2,Weight<2500,35-39 yrs
+286,33,2,40,Female,2,Normal 2500+,30-34 yrs
+287,40,1,38,Female,2,Weight<2500,40+yrs
+288,30,2,39,Male,2,Normal 2500+,30-34 yrs
+289,34,2,39,Female,2,Normal 2500+,30-34 yrs
+290,38,1,39,Male,2,Normal 2500+,35-39 yrs
+291,38,2,39,Male,2,Normal 2500+,35-39 yrs
+292,29,1,28,Male,2,Weight<2500,20-29 yrs
+293,34,2,41,Male,2,Normal 2500+,30-34 yrs
+294,38,2,38,Female,2,Normal 2500+,35-39 yrs
+295,35,2,37,Male,2,Normal 2500+,35-39 yrs
+296,29,1,38,Female,2,Normal 2500+,20-29 yrs
+297,37,2,40,Female,2,Normal 2500+,35-39 yrs
+298,32,2,40,Female,2,Normal 2500+,30-34 yrs
+299,32,2,39,Male,2,Normal 2500+,30-34 yrs
+300,32,1,39,Female,2,Normal 2500+,30-34 yrs
+301,35,2,41,Female,2,Normal 2500+,35-39 yrs
+302,33,2,42,Female,2,Normal 2500+,30-34 yrs
+303,35,2,39,Male,2,Normal 2500+,35-39 yrs
+304,29,2,41,Female,2,Normal 2500+,20-29 yrs
+305,37,2,32,Male,2,Weight<2500,35-39 yrs
+306,27,1,40,Male,2,Normal 2500+,20-29 yrs
+307,38,2,40,Female,2,Normal 2500+,35-39 yrs
+308,35,2,42,Female,2,Normal 2500+,35-39 yrs
+309,37,2,35,Male,2,Normal 2500+,35-39 yrs
+310,40,2,39,Male,2,Normal 2500+,40+yrs
+311,37,2,38,Female,2,Normal 2500+,35-39 yrs
+312,32,2,39,Male,2,Normal 2500+,30-34 yrs
+313,26,2,40,Female,2,Normal 2500+,20-29 yrs
+314,34,2,39,Female,2,Normal 2500+,30-34 yrs
+315,34,2,42,Female,2,Normal 2500+,30-34 yrs
+316,41,2,39,Male,2,Normal 2500+,40+yrs
+317,36,2,39,Male,2,Normal 2500+,35-39 yrs
+318,29,2,40,Female,2,Normal 2500+,20-29 yrs
+319,39,2,40,Female,2,Normal 2500+,35-39 yrs
+320,31,1,38,Female,2,Normal 2500+,30-34 yrs
+321,37,2,40,Female,2,Normal 2500+,35-39 yrs
+322,29,2,36,Female,2,Weight<2500,20-29 yrs
+323,34,1,30,Male,2,Weight<2500,30-34 yrs
+324,37,2,37,Male,2,Normal 2500+,35-39 yrs
+325,36,2,39,Male,2,Normal 2500+,35-39 yrs
+326,36,2,37,Male,2,Normal 2500+,35-39 yrs
+327,37,2,40,Female,2,Normal 2500+,35-39 yrs
+328,38,2,38,Female,2,Normal 2500+,35-39 yrs
+329,32,2,38,Male,2,Normal 2500+,30-34 yrs
+330,33,2,37,Female,2,Normal 2500+,30-34 yrs
+331,38,2,42,Female,2,Normal 2500+,35-39 yrs
+332,27,2,40,Female,2,Normal 2500+,20-29 yrs
+333,28,1,35,Female,2,Weight<2500,20-29 yrs
+334,39,2,39,Male,2,Normal 2500+,35-39 yrs
+335,32,2,40,Male,2,Normal 2500+,30-34 yrs
+336,40,2,38,Male,2,Normal 2500+,40+yrs
+337,29,2,40,Male,2,Normal 2500+,20-29 yrs
+338,38,2,40,Male,2,Normal 2500+,35-39 yrs
+339,35,2,34,Female,2,Normal 2500+,35-39 yrs
+340,36,2,41,Male,2,Normal 2500+,35-39 yrs
+341,39,2,39,Male,2,Normal 2500+,35-39 yrs
+342,34,2,41,Male,3,Normal 2500+,30-34 yrs
+343,34,2,41,Male,3,Normal 2500+,30-34 yrs
+344,34,2,38,Female,3,Weight<2500,30-34 yrs
+345,40,2,37,Male,3,Normal 2500+,40+yrs
+346,37,2,38,Female,3,Normal 2500+,35-39 yrs
+347,31,1,38,Male,3,Weight<2500,30-34 yrs
+348,36,2,41,Female,3,Normal 2500+,35-39 yrs
+349,33,2,39,Male,3,Normal 2500+,30-34 yrs
+350,34,2,38,Female,3,Normal 2500+,30-34 yrs
+351,37,2,31,Female,3,Weight<2500,35-39 yrs
+352,40,2,25,Female,3,Weight<2500,40+yrs
+353,30,2,31,Female,3,Weight<2500,30-34 yrs
+354,35,2,35,Male,3,Normal 2500+,35-39 yrs
+355,38,2,40,Female,3,Normal 2500+,35-39 yrs
+356,40,2,40,Male,3,Normal 2500+,40+yrs
+357,38,2,39,Male,3,Normal 2500+,35-39 yrs
+358,33,2,40,Male,3,Normal 2500+,30-34 yrs
+359,31,2,32,Female,3,Weight<2500,30-34 yrs
+360,29,1,40,Female,3,Normal 2500+,20-29 yrs
+361,32,2,39,Female,3,Normal 2500+,30-34 yrs
+362,29,2,38,Female,3,Weight<2500,20-29 yrs
+363,29,2,41,Male,3,Normal 2500+,20-29 yrs
+364,34,2,39,Female,3,Normal 2500+,30-34 yrs
+365,28,2,38,Male,3,Normal 2500+,20-29 yrs
+366,36,1,39,Male,3,Normal 2500+,35-39 yrs
+367,33,2,39,Male,3,Normal 2500+,30-34 yrs
+368,36,2,39,Female,3,Normal 2500+,35-39 yrs
+369,38,2,38,Female,3,Normal 2500+,35-39 yrs
+370,32,2,42,Male,3,Normal 2500+,30-34 yrs
+371,39,2,40,Female,3,Normal 2500+,35-39 yrs
+372,36,2,37,Male,3,Weight<2500,35-39 yrs
+373,32,2,38,Male,3,Normal 2500+,30-34 yrs
+374,32,2,41,Male,3,Normal 2500+,30-34 yrs
+375,32,2,40,Male,3,Normal 2500+,30-34 yrs
+376,32,1,40,Female,3,Normal 2500+,30-34 yrs
+377,34,2,40,Female,3,Normal 2500+,30-34 yrs
+378,31,2,37,Female,3,Normal 2500+,30-34 yrs
+379,33,2,41,Female,3,Normal 2500+,30-34 yrs
+380,38,2,39,Male,3,Normal 2500+,35-39 yrs
+381,31,2,39,Male,3,Normal 2500+,30-34 yrs
+382,25,1,39,Female,3,Normal 2500+,20-29 yrs
+383,32,1,41,Female,3,Normal 2500+,30-34 yrs
+384,36,2,41,Male,3,Normal 2500+,35-39 yrs
+385,35,2,37,Male,3,Weight<2500,35-39 yrs
+386,27,1,39,Female,3,Normal 2500+,20-29 yrs
+387,35,1,38,Male,3,Normal 2500+,35-39 yrs
+388,30,2,41,Female,3,Normal 2500+,30-34 yrs
+389,37,2,41,Male,3,Normal 2500+,35-39 yrs
+390,32,2,38,Male,3,Normal 2500+,30-34 yrs
+391,28,2,41,Female,3,Normal 2500+,20-29 yrs
+392,30,2,38,Male,3,Normal 2500+,30-34 yrs
+393,27,2,39,Female,3,Normal 2500+,20-29 yrs
+394,32,2,41,Male,3,Normal 2500+,30-34 yrs
+395,32,2,41,Male,3,Normal 2500+,30-34 yrs
+396,40,2,40,Female,3,Normal 2500+,40+yrs
+397,31,2,38,Female,3,Normal 2500+,30-34 yrs
+398,33,2,37,Female,3,Weight<2500,30-34 yrs
+399,28,1,34,Female,3,Weight<2500,20-29 yrs
+400,34,2,35,Male,3,Weight<2500,30-34 yrs
+401,39,2,40,Male,3,Normal 2500+,35-39 yrs
+402,33,1,31,Male,3,Weight<2500,30-34 yrs
+403,25,2,40,Female,3,Normal 2500+,20-29 yrs
+404,34,1,40,Male,3,Normal 2500+,30-34 yrs
+405,29,2,40,Male,3,Normal 2500+,20-29 yrs
+406,37,2,38,Female,3,Normal 2500+,35-39 yrs
+407,34,2,40,Male,3,Normal 2500+,30-34 yrs
+408,26,1,30,Male,3,Weight<2500,20-29 yrs
+409,34,2,41,Male,3,Normal 2500+,30-34 yrs
+410,29,2,40,Female,3,Normal 2500+,20-29 yrs
+411,37,2,35,Female,3,Weight<2500,35-39 yrs
+412,37,2,41,Male,3,Normal 2500+,35-39 yrs
+413,32,2,40,Male,3,Normal 2500+,30-34 yrs
+414,32,1,36,Male,3,Normal 2500+,30-34 yrs
+415,31,2,35,Female,3,Weight<2500,30-34 yrs
+416,39,1,38,Male,3,Normal 2500+,35-39 yrs
+417,40,1,39,Male,3,Normal 2500+,40+yrs
+418,31,2,41,Female,3,Normal 2500+,30-34 yrs
+419,34,2,38,Female,3,Normal 2500+,30-34 yrs
+420,37,2,39,Female,3,Normal 2500+,35-39 yrs
+421,35,2,30,Female,3,Weight<2500,35-39 yrs
+422,37,2,41,Male,3,Normal 2500+,35-39 yrs
+423,35,2,40,Female,3,Normal 2500+,35-39 yrs
+424,31,2,39,Male,3,Normal 2500+,30-34 yrs
+425,29,2,40,Male,3,Normal 2500+,20-29 yrs
+426,35,2,39,Female,3,Normal 2500+,35-39 yrs
+427,31,2,39,Male,3,Normal 2500+,30-34 yrs
+428,30,2,38,Male,3,Normal 2500+,30-34 yrs
+429,32,2,39,Male,3,Normal 2500+,30-34 yrs
+430,33,2,35,Male,3,Weight<2500,30-34 yrs
+431,37,2,38,Female,3,Normal 2500+,35-39 yrs
+432,34,2,40,Female,3,Normal 2500+,30-34 yrs
+433,37,2,39,Male,3,Normal 2500+,35-39 yrs
+434,35,2,41,Male,3,Normal 2500+,35-39 yrs
+435,27,2,41,Female,3,Normal 2500+,20-29 yrs
+436,29,2,40,Male,3,Normal 2500+,20-29 yrs
+437,36,2,34,Female,3,Weight<2500,35-39 yrs
+438,24,1,36,Female,3,Normal 2500+,20-29 yrs
+439,37,2,39,Male,3,Normal 2500+,35-39 yrs
+440,34,2,40,Female,3,Normal 2500+,30-34 yrs
+441,35,2,39,Female,3,Normal 2500+,35-39 yrs
+442,34,2,42,Female,3,Normal 2500+,30-34 yrs
+443,36,2,39,Female,3,Normal 2500+,35-39 yrs
+444,35,2,39,Female,3,Normal 2500+,35-39 yrs
+445,30,1,39,Male,3,Normal 2500+,30-34 yrs
+446,31,1,40,Male,3,Normal 2500+,30-34 yrs
+447,30,2,39,Female,3,Normal 2500+,30-34 yrs
+448,32,2,39,Male,3,Normal 2500+,30-34 yrs
+449,29,2,41,Female,3,Normal 2500+,20-29 yrs
+450,35,1,39,Male,3,Normal 2500+,35-39 yrs
+451,27,1,35,Male,3,Normal 2500+,20-29 yrs
+452,37,2,40,Female,3,Normal 2500+,35-39 yrs
+453,36,1,39,Male,3,Normal 2500+,35-39 yrs
+454,33,2,38,Female,3,Normal 2500+,30-34 yrs
+455,29,2,41,Male,3,Normal 2500+,20-29 yrs
+456,30,2,41,Male,3,Normal 2500+,30-34 yrs
+457,37,2,39,Male,3,Normal 2500+,35-39 yrs
+458,28,2,42,Male,3,Normal 2500+,20-29 yrs
+459,35,2,39,Male,3,Normal 2500+,35-39 yrs
+460,34,2,41,Male,3,Normal 2500+,30-34 yrs
+461,34,2,40,Female,3,Normal 2500+,30-34 yrs
+462,29,2,38,Female,3,Weight<2500,20-29 yrs
+463,37,2,39,Male,3,Normal 2500+,35-39 yrs
+464,27,2,41,Male,3,Normal 2500+,20-29 yrs
+465,35,2,32,Female,3,Weight<2500,35-39 yrs
+466,30,2,39,Female,3,Normal 2500+,30-34 yrs
+467,32,2,39,Female,3,Normal 2500+,30-34 yrs
+468,36,2,40,Male,3,Normal 2500+,35-39 yrs
+469,31,2,41,Male,3,Normal 2500+,30-34 yrs
+470,29,2,38,Male,3,Normal 2500+,20-29 yrs
+471,37,2,41,Male,3,Normal 2500+,35-39 yrs
+472,29,2,34,Male,3,Normal 2500+,20-29 yrs
+473,35,2,41,Female,3,Normal 2500+,35-39 yrs
+474,32,2,38,Male,3,Normal 2500+,30-34 yrs
+475,34,2,36,Female,3,Weight<2500,30-34 yrs
+476,38,2,37,Female,3,Normal 2500+,35-39 yrs
+477,29,2,39,Female,3,Normal 2500+,20-29 yrs
+478,35,2,38,Female,3,Normal 2500+,35-39 yrs
+479,31,1,32,Female,3,Weight<2500,30-34 yrs
+480,30,2,39,Male,3,Normal 2500+,30-34 yrs
+481,41,2,38,Female,3,Normal 2500+,40+yrs
+482,35,2,39,Male,3,Normal 2500+,35-39 yrs
+483,30,1,39,Female,3,Normal 2500+,30-34 yrs
+484,35,2,38,Male,3,Normal 2500+,35-39 yrs
+485,38,2,40,Female,3,Normal 2500+,35-39 yrs
+486,36,2,39,Female,3,Normal 2500+,35-39 yrs
+487,27,2,40,Male,3,Normal 2500+,20-29 yrs
+488,35,2,40,Male,3,Normal 2500+,35-39 yrs
+489,30,2,40,Female,3,Normal 2500+,30-34 yrs
+490,33,2,37,Male,3,Normal 2500+,30-34 yrs
+491,32,2,40,Female,3,Normal 2500+,30-34 yrs
+492,30,2,38,Male,3,Normal 2500+,30-34 yrs
+493,28,2,40,Male,3,Weight<2500,20-29 yrs
+494,32,1,38,Male,3,Normal 2500+,30-34 yrs
+495,33,1,33,Male,3,Weight<2500,30-34 yrs
+496,36,2,38,Female,3,Normal 2500+,35-39 yrs
+497,35,2,38,Female,3,Normal 2500+,35-39 yrs
+498,32,2,40,Female,3,Normal 2500+,30-34 yrs
+499,36,2,39,Male,3,Normal 2500+,35-39 yrs
+500,37,2,39,Male,3,Normal 2500+,35-39 yrs
+501,37,2,38,Female,4,Normal 2500+,35-39 yrs
+502,37,2,40,Female,4,Normal 2500+,35-39 yrs
+503,37,2,39,Male,4,Normal 2500+,35-39 yrs
+504,35,2,40,Male,4,Normal 2500+,35-39 yrs
+505,40,2,40,Male,4,Normal 2500+,40+yrs
+506,34,2,38,Female,4,Normal 2500+,30-34 yrs
+507,30,2,40,Male,4,Normal 2500+,30-34 yrs
+508,39,2,40,Female,4,Normal 2500+,35-39 yrs
+509,31,2,40,Male,4,Normal 2500+,30-34 yrs
+510,37,2,38,Male,4,Normal 2500+,35-39 yrs
+511,26,1,39,Male,4,Normal 2500+,20-29 yrs
+512,34,1,37,Male,4,Normal 2500+,30-34 yrs
+513,30,1,31,Male,4,Weight<2500,30-34 yrs
+514,32,2,39,Male,4,Normal 2500+,30-34 yrs
+515,38,2,40,Male,4,Normal 2500+,35-39 yrs
+516,30,1,39,Female,4,Normal 2500+,30-34 yrs
+517,30,2,38,Female,4,Normal 2500+,30-34 yrs
+518,33,2,42,Male,4,Normal 2500+,30-34 yrs
+519,39,2,37,Female,4,Normal 2500+,35-39 yrs
+520,37,2,37,Male,4,Normal 2500+,35-39 yrs
+521,38,2,38,Female,4,Normal 2500+,35-39 yrs
+522,36,2,38,Female,4,Normal 2500+,35-39 yrs
+523,39,2,39,Male,4,Normal 2500+,35-39 yrs
+524,38,2,42,Male,4,Normal 2500+,35-39 yrs
+525,36,2,39,Female,4,Normal 2500+,35-39 yrs
+526,37,2,41,Female,4,Normal 2500+,35-39 yrs
+527,33,2,39,Female,4,Normal 2500+,30-34 yrs
+528,25,2,39,Male,4,Normal 2500+,20-29 yrs
+529,33,2,40,Male,4,Normal 2500+,30-34 yrs
+530,35,2,40,Female,4,Normal 2500+,35-39 yrs
+531,38,2,40,Female,4,Normal 2500+,35-39 yrs
+532,43,1,37,Male,4,Normal 2500+,40+yrs
+533,28,2,35,Male,4,Weight<2500,20-29 yrs
+534,30,2,40,Female,4,Normal 2500+,30-34 yrs
+535,37,2,38,Male,4,Normal 2500+,35-39 yrs
+536,33,2,39,Male,4,Normal 2500+,30-34 yrs
+537,38,2,42,Female,4,Normal 2500+,35-39 yrs
+538,39,2,39,Female,4,Normal 2500+,35-39 yrs
+539,38,2,36,Male,4,Weight<2500,35-39 yrs
+540,30,2,40,Female,4,Normal 2500+,30-34 yrs
+541,29,2,39,Male,4,Normal 2500+,20-29 yrs
+542,33,2,37,Female,4,Normal 2500+,30-34 yrs
+543,30,2,39,Male,4,Normal 2500+,30-34 yrs
+544,26,2,40,Female,4,Normal 2500+,20-29 yrs
+545,39,2,40,Female,4,Normal 2500+,35-39 yrs
+546,32,1,39,Male,4,Normal 2500+,30-34 yrs
+547,39,2,41,Male,4,Normal 2500+,35-39 yrs
+548,43,1,38,Female,4,Normal 2500+,40+yrs
+549,30,2,39,Female,4,Normal 2500+,30-34 yrs
+550,30,2,38,Male,4,Weight<2500,30-34 yrs
+551,42,2,40,Female,4,Normal 2500+,40+yrs
+552,34,2,39,Female,4,Normal 2500+,30-34 yrs
+553,36,1,42,Female,4,Normal 2500+,35-39 yrs
+554,40,2,41,Female,4,Normal 2500+,40+yrs
+555,30,1,33,Female,4,Weight<2500,30-34 yrs
+556,32,2,39,Male,4,Normal 2500+,30-34 yrs
+557,30,2,40,Male,4,Normal 2500+,30-34 yrs
+558,34,1,37,Female,4,Normal 2500+,30-34 yrs
+559,35,2,40,Female,4,Weight<2500,35-39 yrs
+560,39,2,38,Male,4,Normal 2500+,35-39 yrs
+561,39,2,42,Female,4,Normal 2500+,35-39 yrs
+562,39,2,36,Male,4,Normal 2500+,35-39 yrs
+563,36,2,34,Male,4,Weight<2500,35-39 yrs
+564,26,2,40,Female,4,Normal 2500+,20-29 yrs
+565,29,2,38,Female,4,Normal 2500+,20-29 yrs
+566,33,2,40,Female,4,Normal 2500+,30-34 yrs
+567,32,2,39,Male,4,Normal 2500+,30-34 yrs
+568,38,2,40,Female,4,Normal 2500+,35-39 yrs
+569,25,1,31,Female,4,Weight<2500,20-29 yrs
+570,24,2,39,Female,4,Normal 2500+,20-29 yrs
+571,29,2,41,Male,4,Normal 2500+,20-29 yrs
+572,35,2,41,Male,4,Normal 2500+,35-39 yrs
+573,32,2,39,Female,4,Weight<2500,30-34 yrs
+574,35,2,40,Female,4,Normal 2500+,35-39 yrs
+575,37,2,40,Male,4,Normal 2500+,35-39 yrs
+576,31,2,32,Male,4,Weight<2500,30-34 yrs
+577,35,2,39,Male,4,Normal 2500+,35-39 yrs
+578,33,1,41,Female,4,Normal 2500+,30-34 yrs
+579,23,2,41,Female,4,Normal 2500+,20-29 yrs
+580,29,2,41,Female,4,Normal 2500+,20-29 yrs
+581,26,2,38,Female,4,Normal 2500+,20-29 yrs
+582,27,2,41,Male,4,Normal 2500+,20-29 yrs
+583,34,2,35,Female,4,Normal 2500+,30-34 yrs
+584,32,2,42,Male,4,Normal 2500+,30-34 yrs
+585,38,2,42,Female,4,Normal 2500+,35-39 yrs
+586,36,1,40,Female,4,Normal 2500+,35-39 yrs
+587,29,2,39,Female,4,Normal 2500+,20-29 yrs
+588,33,2,39,Male,4,Normal 2500+,30-34 yrs
+589,37,1,29,Male,4,Weight<2500,35-39 yrs
+590,33,2,39,Male,4,Normal 2500+,30-34 yrs
+591,29,2,39,Female,4,Normal 2500+,20-29 yrs
+592,33,2,41,Male,4,Normal 2500+,30-34 yrs
+593,34,2,41,Female,4,Normal 2500+,30-34 yrs
+594,35,2,41,Male,4,Normal 2500+,35-39 yrs
+595,35,1,39,Female,4,Normal 2500+,35-39 yrs
+596,32,2,39,Male,4,Normal 2500+,30-34 yrs
+597,34,2,41,Male,4,Normal 2500+,30-34 yrs
+598,38,1,41,Male,4,Normal 2500+,35-39 yrs
+599,38,2,36,Male,4,Normal 2500+,35-39 yrs
+600,30,1,35,Female,4,Weight<2500,30-34 yrs
+601,35,2,39,Female,4,Normal 2500+,35-39 yrs
+602,27,2,40,Male,4,Normal 2500+,20-29 yrs
+603,26,2,39,Male,4,Normal 2500+,20-29 yrs
+604,30,2,39,Male,4,Normal 2500+,30-34 yrs
+605,31,2,41,Female,4,Normal 2500+,30-34 yrs
+606,29,2,37,Female,4,Normal 2500+,20-29 yrs
+607,33,2,39,Male,4,Normal 2500+,30-34 yrs
+608,36,2,40,Female,4,Normal 2500+,35-39 yrs
+609,37,2,38,Female,4,Normal 2500+,35-39 yrs
+610,34,2,36,Male,4,Normal 2500+,30-34 yrs
+611,38,2,40,Male,4,Normal 2500+,35-39 yrs
+612,29,2,41,Male,4,Normal 2500+,20-29 yrs
+613,38,2,40,Male,4,Normal 2500+,35-39 yrs
+614,36,2,32,Female,4,Weight<2500,35-39 yrs
+615,38,2,40,Female,4,Normal 2500+,35-39 yrs
+616,30,2,40,Female,4,Normal 2500+,30-34 yrs
+617,39,2,40,Female,4,Normal 2500+,35-39 yrs
+618,33,2,39,Male,4,Normal 2500+,30-34 yrs
+619,37,2,34,Female,4,Weight<2500,35-39 yrs
+620,39,2,40,Male,4,Normal 2500+,35-39 yrs
+621,33,2,40,Female,4,Normal 2500+,30-34 yrs
+622,36,2,39,Female,4,Normal 2500+,35-39 yrs
+623,35,2,39,Male,4,Normal 2500+,35-39 yrs
+624,30,2,39,Male,4,Normal 2500+,30-34 yrs
+625,31,1,38,Female,4,Normal 2500+,30-34 yrs
+626,33,2,38,Female,4,Normal 2500+,30-34 yrs
+627,36,2,39,Male,4,Normal 2500+,35-39 yrs
+628,38,2,39,Male,4,Normal 2500+,35-39 yrs
+629,31,2,38,Male,4,Normal 2500+,30-34 yrs
+630,37,2,33,Female,4,Weight<2500,35-39 yrs
+631,32,2,38,Male,4,Normal 2500+,30-34 yrs
+632,31,2,40,Female,4,Normal 2500+,30-34 yrs
+633,33,2,39,Female,4,Normal 2500+,30-34 yrs
+634,35,2,40,Female,4,Normal 2500+,35-39 yrs
+635,33,2,38,Male,4,Normal 2500+,30-34 yrs
+636,34,2,41,Male,4,Normal 2500+,30-34 yrs
+637,28,2,39,Female,4,Normal 2500+,20-29 yrs
+638,38,1,38,Male,4,Normal 2500+,35-39 yrs
+639,26,2,39,Female,4,Normal 2500+,20-29 yrs
+640,31,2,40,Female,4,Normal 2500+,30-34 yrs
+641,31,2,38,Male,4,Normal 2500+,30-34 yrs
