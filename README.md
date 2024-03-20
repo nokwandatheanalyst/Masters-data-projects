@@ -1,5 +1,9 @@
 ## Regression Modelling (Part 1)
 
+### About:
+
+This assignment/project aims to develop skills in performing linear regressionanalysis and accurately interpreting the results. You will be asked to describe your data, fit univariable and multivariable linear regression models, write down fitted equations and interpret the results in text.
+
 ### Data: 
 
 This data is coming from a cohort of individuals living with HIV. These individuals had failed or 
@@ -30,6 +34,8 @@ AIDS for improving treatment quality and health outcomes.
 
 Different factors affect what an individual needs from a medical aid scheme, and these change over time. For this reason, some individuals tend to review their existing medical aid cover periodically and compare it with other medical aid schemes. Data from medical aid scheme records were available. 
 
+The goal of the assignment/project is to develop some capability in carrying out and interpreting logistic regression models and the data they arise from
+
 ### Data:
 
 This data looks at what factors increase the likelihood that individuals will change to a different medical aid scheme if provided information that the current medical aid scheme they use no longer meet their needs. 
@@ -54,6 +60,9 @@ The outcome variable ‘med_scheme’ is a binary indicator coded as 1 if there 
 ● ages – age of primary beneficiary
 
 ## Regression modelling (Part 3)
+
+### About:
+The goal of this assignment/project is to demonstrate that you can apply two methods of survival analysis to some real-world data and accurately interpret the results. You will be asked to plot Kaplan-Meier curves, perform formal tests to explore group differences, fit univariable and multivariable Cox regression models, and interpret the results
 
 ### Data:
 
