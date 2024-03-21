@@ -119,6 +119,7 @@ Link: https://github.com/nokwandatheanalyst/Masters-data-projects/blob/13ee39264
 Link:https://github.com/nokwandatheanalyst/Masters-data-projects/blob/0058bc9ee305b48ef22fc8885a800d4d143bdec7/transplant_survival_data_38.csv
 
 ### Outcomes:
+Death due to relapse and other causes stratified by the different leukaemia disease
 
 ## Variables of interest:
 • id: patient identifier
